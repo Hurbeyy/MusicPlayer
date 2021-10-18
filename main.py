@@ -92,51 +92,51 @@ bot.send(
     functions.bots.SetBotCommands(
         commands=[
             types.BotCommand(
-                command="start",
+                command="başlat",
                 description="Botun canlı olup olmadığını kontrol edin"
             ),
             types.BotCommand(
-                command="help",
+                command="yardım",
                 description="Yardım iletisini gösterir"
             ),
             types.BotCommand(
-                command="play",
+                command="oynat",
                 description="Youtube/audiofile'dan şarkı çalma"
             ),
             types.BotCommand(
-                command="splay",
+                command="soynat",
                 description="JioSaavn'dan şarkı çal, bir albüm çalmak için bayrak kullan."
             ),
             types.BotCommand(
-                command="cplay",
+                command="coynat",
                 description="Bir kanaldan müzik dosyalarını çalma."
             ),
             types.BotCommand(
-                command="yplay",
+                command="yoynat",
                 description="Youtube çalma listesinden müzik dosyalarını çalar."
             ),
             types.BotCommand(
-                command="player",
+                command="çalanşarkı",
                 description="Geçerli çalma şarkısını denetimlerle gösterir"
             ),
             types.BotCommand(
-                command="playlist",
+                command="oynatmalistesi",
                 description="Çalma listesini gösterir"
             ),
             types.BotCommand(
-                command="clearplaylist",
+                command="listeyitemizle",
                 description="Geçerli çalma listesini temizler"
             ),
             types.BotCommand(
-                command="shuffle",
+                command="karıştır",
                 description="Çalma listesini karıştırma"
             ),
             types.BotCommand(
-                command="export",
+                command="ihracat",
                 description="Geçerli çalma listesini ileride kullanmak üzere json dosyası olarak dışa aktarma."
             ),
             types.BotCommand(
-                command="import",
+                command="ithalat",
                 description="Önceden verilen çalma listesini içeri aktarma."
             ),
             types.BotCommand(
@@ -144,15 +144,15 @@ bot.send(
                 description="Geçerli çalma şarkısını ses dosyası olarak karşıya yükle."
             ),
             types.BotCommand(
-                command="skip",
+                command="atla",
                 description="Geçerli şarkıyı atla"
             ),           
             types.BotCommand(
-                command="join",
+                command="katıl",
                 description="VC'ye Katıl"
             ),
             types.BotCommand(
-                command="leave",
+                command="ayrıl",
                 description="VC'den ayrıl"
             ),
             types.BotCommand(
@@ -160,47 +160,47 @@ bot.send(
                 description="VC birleştirilirse Ckeck"
             ),
             types.BotCommand(
-                command="stop",
+                command="dur",
                 description="Çalmayı Durdurur"
             ),
             types.BotCommand(
-                command="radio",
+                command="radyo",
                 description="Alem Fm Canlı Radio"
             ),
             types.BotCommand(
-                command="stopradio",
+                command="radyodur",
                 description="Radyo/Canlı yayını durdurur"
             ),
             types.BotCommand(
-                command="replay",
+                command="tekraroynat",
                 description="Baştan tekrarla"
             ),
             types.BotCommand(
-                command="clean",
+                command="temizlik",
                 description="RAW dosyalarını temizler"
             ),
             types.BotCommand(
-                command="pause",
+                command="duraklat",
                 description="Şarkıyı duraklatma"
             ),
             types.BotCommand(
-                command="resume",
+                command="devamet",
                 description="Duraklatılan şarkıya devam etme"
             ),
             types.BotCommand(
-                command="mute",
+                command="sessizlik",
                 description="VC'de Sessize Alma"
             ),
             types.BotCommand(
-                command="volume",
+                command="ses",
                 description="Bass Ses ayarlama 0-200"
             ),
             types.BotCommand(
-                command="unmute",
+                command="sesiaç",
                 description="VC'de sesi aç"
             ),
             types.BotCommand(
-                command="restart",
+                command="tekrarbaşlat",
                 description="Botu güncelleştirme ve yeniden başlatma"
             )
         ]
