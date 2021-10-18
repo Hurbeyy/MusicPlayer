@@ -40,13 +40,10 @@ import ffmpeg
 
 U=USERNAME
 EDIT_TITLE=Config.EDIT_TITLE
-LOG_GROUP=Config.LOG_GROUP
 ADMIN_ONLY=Config.ADMIN_ONLY
 DURATION_LIMIT = Config.DURATION_LIMIT
 msg = Config.msg
 ADMINS=Config.ADMINS
-CHAT=Config.CHAT
-LOG_GROUP=Config.LOG_GROUP
 GET_THUMB={}
 async def is_admin(_, client, message: Message):
     admins = await mp.get_admins(CHAT)
