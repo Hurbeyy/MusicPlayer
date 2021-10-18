@@ -40,10 +40,13 @@ import ffmpeg
 
 U=USERNAME
 EDIT_TITLE=Config.EDIT_TITLE
+LOG_GROUP=Config.LOG_GROUP
 ADMIN_ONLY=Config.ADMIN_ONLY
 DURATION_LIMIT = Config.DURATION_LIMIT
 msg = Config.msg
 ADMINS=Config.ADMINS
+CHAT=Config.CHAT
+LOG_GROUP=Config.LOG_GROUP
 GET_THUMB={}
 async def is_admin(_, client, message: Message):
     admins = await mp.get_admins(CHAT)
@@ -57,10 +60,10 @@ async def is_admin(_, client, message: Message):
 admin_filter=filters.create(is_admin)   
 
 
-@Client.on_message(filters.command(["play", f"play@{U}"]) & filters.private) | filters.audio & filters.private)
+@Client.on_message(filters.command(["play", f"play@{U}"]) & (filters.chat(CHAT) | filters.private) | filters.audio & filters.private)
 async def yplay(_, message: Message):
     if ADMIN_ONLY == "Y":
-        admins = await mp.get_admins()
+        admins = await mp.get_admins(CHAT)
         if message.from_user.id not in admins:
             m=await message.reply_sticker("CAADBQADsQIAAtILIVYld1n74e3JuQI")
             await mp.delete(m)
@@ -1014,7 +1017,7 @@ async def yt_play_list(client, m: Message):
                         ]
                     ]
                     )
-                k=await m.reply("Sizin için veri getiremedim. Lütfen gönderin / başlatın ve tekrar deneyin." , reply_markup=markup)
+                k=await m.reply("Sizin için veri getiremdim :). Lütfen buraya / url=f"https://t.me/ALeM_Sohbet", reply_markup=markup)
                 await mp.delete(k)
                 return
             elif ytplaylist == "nosub":
