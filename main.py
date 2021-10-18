@@ -42,7 +42,6 @@ except ModuleNotFoundError:
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-CHAT=Config.CHAT
 bot = Client(
     "Musicplayer",
     Config.API_ID,
