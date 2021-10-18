@@ -9,7 +9,7 @@ Please fork this repository don't import code
 Made with Python3
 (C) @subinps
 Copyright permission under MIT License
-License -> https://github.com/subinps/MusicPlayer/blob/master/LICENSE
+License -> https://github.com/Hurbeyy/MusicPlayer
 
 ```
 
