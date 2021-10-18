@@ -24,6 +24,7 @@ from pyrogram.types import Message
 from utils import mp, RADIO, USERNAME
 from config import Config
 from config import STREAM
+CHAT=Config.CHAT
 ADMINS=Config.ADMINS
 
 async def is_admin(_, client, message: Message):
