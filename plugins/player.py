@@ -1017,7 +1017,7 @@ async def yt_play_list(client, m: Message):
                         ]
                     ]
                     )
-                k=await m.reply("Sizin için veri getiremdim :). Lütfen buraya / url=f"https://t.me/ALeM_Sohbet", reply_markup=markup)
+                k=await m.reply("Sizin için veri getiremedim. Lütfen gönderin / başlatın ve tekrar deneyin." , reply_markup=markup)
                 await mp.delete(k)
                 return
             elif ytplaylist == "nosub":
