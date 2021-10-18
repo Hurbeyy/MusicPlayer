@@ -93,115 +93,115 @@ bot.send(
         commands=[
             types.BotCommand(
                 command="start",
-                description="Check if bot alive"
+                description="Botun canlı olup olmadığını kontrol edin"
             ),
             types.BotCommand(
                 command="help",
-                description="Shows help message"
+                description="Yardım iletisini gösterir"
             ),
             types.BotCommand(
                 command="play",
-                description="Play song from youtube/audiofile"
+                description="Youtube/audiofile'dan şarkı çalma"
             ),
             types.BotCommand(
                 command="splay",
-                description="Play song from JioSaavn, use -a flag to play an album."
+                description="JioSaavn'dan şarkı çal, bir albüm çalmak için bayrak kullan."
             ),
             types.BotCommand(
                 command="cplay",
-                description="Plays music files from a channel."
+                description="Bir kanaldan müzik dosyalarını çalma."
             ),
             types.BotCommand(
                 command="yplay",
-                description="Plays music files from a youtube playlist."
+                description="Youtube çalma listesinden müzik dosyalarını çalar."
             ),
             types.BotCommand(
                 command="player",
-                description="Shows current playing song with controls"
+                description="Geçerli çalma şarkısını denetimlerle gösterir"
             ),
             types.BotCommand(
                 command="playlist",
-                description="Shows the playlist"
+                description="Çalma listesini gösterir"
             ),
             types.BotCommand(
                 command="clearplaylist",
-                description="Clears the current playlist"
+                description="Geçerli çalma listesini temizler"
             ),
             types.BotCommand(
                 command="shuffle",
-                description="Shuffle the playlist"
+                description="Çalma listesini karıştırma"
             ),
             types.BotCommand(
                 command="export",
-                description="Export current playlist as json file for future use."
+                description="Geçerli çalma listesini ileride kullanmak üzere json dosyası olarak dışa aktarma."
             ),
             types.BotCommand(
                 command="import",
-                description="Import a previously exported playlist."
+                description="Önceden verilen çalma listesini içeri aktarma."
             ),
             types.BotCommand(
                 command="upload",
-                description="Upload current playing song as audio file."
+                description="Geçerli çalma şarkısını ses dosyası olarak karşıya yükle."
             ),
             types.BotCommand(
                 command="skip",
-                description="Skip the current song"
+                description="Geçerli şarkıyı atla"
             ),           
             types.BotCommand(
                 command="join",
-                description="Join VC"
+                description="VC'ye Katıl"
             ),
             types.BotCommand(
                 command="leave",
-                description="Leave from VC"
+                description="VC'den ayrıl"
             ),
             types.BotCommand(
                 command="vc",
-                description="Ckeck if VC is joined"
+                description="VC birleştirilirse Ckeck"
             ),
             types.BotCommand(
                 command="stop",
-                description="Stops Playing"
+                description="Çalmayı Durdurur"
             ),
             types.BotCommand(
                 command="radio",
-                description="Start radio / Live stream"
+                description="Alem Fm Canlı Radio"
             ),
             types.BotCommand(
                 command="stopradio",
-                description="Stops radio/Livestream"
+                description="Radyo/Canlı yayını durdurur"
             ),
             types.BotCommand(
                 command="replay",
-                description="Replay from beggining"
+                description="Baştan tekrarla"
             ),
             types.BotCommand(
                 command="clean",
-                description="Cleans RAW files"
+                description="RAW dosyalarını temizler"
             ),
             types.BotCommand(
                 command="pause",
-                description="Pause the song"
+                description="Şarkıyı duraklatma"
             ),
             types.BotCommand(
                 command="resume",
-                description="Resume the paused song"
+                description="Duraklatılan şarkıya devam etme"
             ),
             types.BotCommand(
                 command="mute",
-                description="Mute in VC"
+                description="VC'de Sessize Alma"
             ),
             types.BotCommand(
                 command="volume",
-                description="Set volume between 0-200"
+                description="Bass Ses ayarlama 0-200"
             ),
             types.BotCommand(
                 command="unmute",
-                description="Unmute in VC"
+                description="VC'de sesi aç"
             ),
             types.BotCommand(
                 command="restart",
-                description="Update and restart the bot"
+                description="Botu güncelleştirme ve yeniden başlatma"
             )
         ]
     )
