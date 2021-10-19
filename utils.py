@@ -109,12 +109,12 @@ class MusicPlayer(object):
                 tplaylist=playlist[:25]
                 pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
                 pl += f"{emoji.PLAY_BUTTON} **Oynatma Listesi**:\n" + "\n".join([
-                    f"**{i}**. **🎸{x[1]}**\n   👤**Talep Eden:** {x[4]}"
+                    f"**{i}**. **🕊️{x[1]}**\n   🅃👣**Talep Eden:** {x[4]}"
                     for i, x in enumerate(tplaylist)
                     ])
             else:
                 pl = f"{emoji.PLAY_BUTTON} **Oynatma Listesi**:\n" + "\n".join([
-                    f"**{i}**. **🎸{x[1]}**\n   👤**Talep Eden:** {x[4]}\n"
+                    f"**{i}**. **🕊️{x[1]}**\n   🅃👣**Talep Eden:** {x[4]}\n"
                     for i, x in enumerate(playlist)
                 ])
         if msg.get('playlist') is not None:
