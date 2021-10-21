@@ -1,4 +1,4 @@
-#MIT Licenseg
+#MIT License
 
 #Copyright (c) 2021 SUBIN
 
